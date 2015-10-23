@@ -4,6 +4,8 @@
 # This is an exercise file from Python 3 Essential Training on lynda.com
 # Copyright (c) 2010 The BearHeart Group, LLC
 
+#MVC
+
 # -- VIEW --
 
 class AnimalActions:

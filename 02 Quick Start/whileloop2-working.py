@@ -5,5 +5,4 @@
 a, b = 0, 1
 while b < 50:
     print(b)
-    a, b = b, a + b #assign a with b and b with a + b;
-print("done");
+    a, b = b, a + b
