@@ -4,6 +4,16 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    print("This is the syntax.py file.")
+    foo(2);
+    foo(3);
+    foo(4);
+    foo();
 
+#assigning a parameter makes it default
+def foo(a=8):
+    for i in range(a, 10):
+        print(i, end=' ');
+    print();
+    
+    
 if __name__ == "__main__": main(); #let you call function after their call
