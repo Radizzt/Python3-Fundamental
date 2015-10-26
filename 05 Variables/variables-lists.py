@@ -6,7 +6,7 @@
 def main():
     tuple1 = (1,2,3); #tuples object, immutable
     list1 = [1,2,3]; #list object, mutable
-    str = "String"; #is like a list/array can use index on them.
+    str = "String"; #is like a list/array can use index on them
     print(type(tuple1), tuple1);
     print(type(list1), list1);
     list1.append(5);
