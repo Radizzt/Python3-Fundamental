@@ -6,6 +6,8 @@
 def main():
     s = 'this is a string'
     for c in s:
+        if c == 's': continue; #skip current loop and go to the next one
         print(c, end='')
-
+    else:
+        print(" else");#this will run when for loop is false (usually end of loop)
 if __name__ == "__main__": main()

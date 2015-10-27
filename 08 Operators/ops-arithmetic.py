@@ -4,6 +4,7 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    print("This is the ops.py file.");
+    #has all common arithmetic operator, only putting up the uncommon ones.
+    print(divmod(9,4));
 
 if __name__ == "__main__": main()

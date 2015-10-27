@@ -4,6 +4,12 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    print("This is the ops.py file.");
+    #has all common comparison operator, adding unique ones
+    x,y= 1, 1#different ID
+    print(x is y);#testing ID NOT values
+    print(x is not y);
+    x = y;
+    print(x is y);
+    
 
 if __name__ == "__main__": main()
