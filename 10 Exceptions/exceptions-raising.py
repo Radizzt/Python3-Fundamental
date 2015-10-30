@@ -17,7 +17,7 @@ def readFile(fileName):
         fh = open(fileName);
         return fh.readlines();
     else:
-        #create your own Error exception 
+        #raise your own Error exception 
         raise ValueError("must end with .txt or a text file.");
 
 if __name__ == "__main__": main()
