@@ -18,9 +18,32 @@ class Duck:
 
     def get_property(self, key):
         return self.properties.get(key, None)
+    
+    def __del__(self):
+        print("removing object");
+    
+    #@property turns it to an accessor for color variable
+    @property
+    def color(self):
+        return self.properties.get("color", None);
 
+    @color.setter
+    def color(self, c):
+        print("setting colours");
+        self.properties["color"] = c;
+        
+    @color.deleter
+    def color(self):
+        print("deleting colour");
+        del self.properties['color'];
+        
 def main():
-    donald = Duck(color = 'blue')
-    print(donald.get_property('color'))
+    donald = Duck();
+    test = Duck();
+    donald.color ="blue"
+    del test;
+    print(donald.color);
+    del donald;
+
 
 if __name__ == "__main__": main()
