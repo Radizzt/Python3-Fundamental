@@ -4,7 +4,7 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    f = open('lines.txt')
+    f = open('lines.txt') #read mode by default "R,W,A(append) mode"
     for line in f:
         print(line, end = '')
 
