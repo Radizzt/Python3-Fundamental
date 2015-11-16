@@ -10,8 +10,8 @@ def insert(db, row):
     db.commit()
 
 def retrieve(db, t1):
-    cursor = db.execute('select * from test where t1 = ?', (t1,))
-    return cursor.fetchone()
+    cursor = db.execute('select * from test where t1 = ?', (t1,))#must be a tuple/dict
+    return cursor.fetchone();#return a single result only
 
 def update(db, row):
     db.execute('update test set i1 = ? where t1 = ?', (row['i1'], row['t1']))
