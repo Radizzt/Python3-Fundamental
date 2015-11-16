@@ -7,19 +7,24 @@ import saytime
 import unittest
 
 class TestSaytime(unittest.TestCase):
+    #unittest initial call to a test
     def setUp(self):
+        print("first thing to pop up before a test start");
         self.nums = list(range(11))
 
     def test_numbers(self):
+        print("Test number");
         # make sure the numbers translate correctly
         words = (
             'oh', 'one', 'two', 'three', 'four', 'five',
             'six', 'seven', 'eight', 'nine', 'ten'
         )
         for i, n in enumerate(self.nums):
+            #comapre the saytime module with words list. If same ignore, else error
             self.assertEqual(saytime.numwords(n).numwords(), words[i])
 
     def test_time(self):
+        print("test time");
         time_tuples = (
             (0, 0), (0, 1), (11, 0), (12, 0), (13, 0), (12, 29), (12, 30),
             (12, 31), (12, 15), (12, 30), (12, 45), (11, 59), (23, 15), 

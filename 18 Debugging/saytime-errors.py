@@ -126,7 +126,7 @@ def main():
             try: print(saytime(*(sys.argv[1].split(':'))).words())
             except TypeError: print("Invalid time ({})".format(sys.argv[1]))
     else:
-        print(saytime_t(time.localtime).words)
+        print(saytime_t(time.localtime.words)
 
 def test():
     print("\nnumbers test:")
